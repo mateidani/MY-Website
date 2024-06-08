@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  header {
+    .container {
+      padding: 10px 30px;
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img {
+          margin-left: -15vh;
+        }
+
+        ul {
+          padding: 0 10px;
+
+          li {
+            display: inline-block;
+            list-style: none;
+            margin: 1px 10px;
+
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 22px;
+              position: relative;
+            }
+
+            a:hover {
+              color: red;
+              transition: 0.7s;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //main de la index
+  #index {
+    .i1 {
+      width: 605px;
+      height: 605px;
+      background-image: url(editface.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      position: relative;
+      float: inline-end;
+      left: -25vh;
+      top: -27vh;
+    }
+
+    .main-text {
+      margin: 13% 18%;
+      font-size: 25px;
+
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+
+      span {
+        color: red;
+      }
+
+      span:hover {
+        color: white;
+        transition: 0.8s;
+      }
+
+      .icons {
+        ul {
+          list-style: none;
+          li {
+            display: inline-block;
+            letter-spacing: 30px;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*--------About---------*/
+
+  //Main de la about
+  #about {
+    padding: 70px 0;
+
+    .about-img {
+      img {
+        border-radius: 50%;
+        width: 79vh;
+        height: 79vh;
+      }
+    }
+    .sub-title {
+      float: inline-end;
+      margin: 10vh -70vh;
+      h1 {
+        font-weight: 600;
+      }
+      h1:hover {
+        color: red;
+        transition: 1.5s;
+      }
+      .desc1 {
+        width: 650px;
+        font-size: 1.2rem;
+        padding-top: 5px;
+        font-weight: 600;
+      }
+    }
+
+    .tab-titles {
+      display: flex;
+      margin: 20px 0 40px;
+
+      .tab-links {
+        margin-right: 40vh;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+      }
+      .tab-links:hover {
+        color: red;
+        transition: 0.8s;
+      }
+    }
+
+    .tab-contents {
+      margin: -20px -30px;
+
+      .skills {
+        li {
+          list-style: none;
+          margin: 10px 0;
+        }
+      }
+      span {
+        color: red;
+        font-size: 14px;
+        display: table-row;
+      }
+    }
+
+    .tab-education {
+      float: inline-end;
+      margin: -14vh 12vh;
+
+      .education {
+        li {
+          list-style: none;
+          margin: 10px 0;
+        }
+      }
+      span {
+        color: red;
+        font-size: 14px;
+        display: table-row;
+      }
+    }
+  }
+
+  /*-------Services-------*/
+  #services {
+    padding: 30px 0;
+  }
+  .sub-title {
+    font-weight: 600;
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+    div {
+      background: #262626;
+      padding: 40px;
+      font-size: 13px;
+      font-weight: 300;
+      border-right: 10px;
+      border-radius: 10px;
+
+      i {
+        font-size: 50px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      a {
+        text-decoration: none;
+        color: lightblue;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    div:hover {
+      background-color: red;
+      transform: translateY(-10px);
+      transition: 0.5s;
+    }
+  }
+
+  #portofolio {
+    .sub-title {
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .pos1 {
+    width: 70%;
+    height: 60%;
+    margin: -2% 15%;
+  }
+
+  #contact {
+    .container {
+      margin-top: 15vh;
+
+      .sub-title2 {
+        font-size: 3rem;
+        font-weight: 550;
+      }
+    }
+  }
+
+  /*-------Contact-------*/
+  #contact {
+    .contact-left {
+      margin: 23vh 32vh;
+      font-size: 1.4rem;
+
+      .info1 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      p {
+        i {
+          color: red;
+          margin-right: 15px;
+        }
+      }
+
+      .social-icons {
+        i {
+          color: white;
+          font-size: 1.6rem;
+          letter-spacing: 15px;
+        }
+
+        i:hover {
+          color: red;
+          transition: 0.9s;
+        }
+      }
+
+      .btn {
+        color: white;
+        background-color: red;
+        width: 170px;
+        height: 45px;
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-right {
+        p {
+          float: inline-end;
+          margin-top: -40vh;
+        }
+      }
+    }
+
+    .copyright {
+      background-color: #262626;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 300;
+      font-size: 1.1rem;
+      p {
+        margin: 10px 0;
+      }
+    }
+  }
+}
